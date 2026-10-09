@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BroadRead",
+      "Effect": "Allow",
+      "Action": [
+        "data:read"
+      ],
+      "Resource": [
+        "app/*"
+      ]
+    },
+    {
+      "Sid": "OrdersWrite",
+      "Effect": "Allow",
+      "Action": [
+        "orders:write"
+      ],
+      "Resource": [
+        "orders"
+      ]
+    }
+  ]
+}
