@@ -10,7 +10,7 @@ services:
     image: ghcr.io/manvendersingh21/closeloop-lab-api:0.1.0
     env:
       - WORKLOAD_TOKEN=<WORKLOAD_TOKEN>
-      - 'POLICY_JSON={"statements":[{"sid":"BroadRead","effect":"allow","actions":["data:read"],"resources":["*"]},{"sid":"OrdersWrite","effect":"allow","actions":["orders:write"],"resources":["orders"]}]}'
+      - 'POLICY_JSON={"statements":[{"sid":"BroadRead","effect":"allow","actions":["data:read"],"resources":["app/*"]},{"sid":"OrdersWrite","effect":"allow","actions":["orders:write"],"resources":["orders"]}]}'
     expose:
       - port: 8080
         as: 80
